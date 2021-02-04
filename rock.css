@@ -1,0 +1,119 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .menu {
+        list-style: none;
+    }
+    /* Estilos de la navegacion*/
+    
+    .main {
+        background: #32314e;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1%;
+        height: 40px;
+        min-height: 38px;
+    }
+    
+    .main h1 {
+        color: white;
+        margin-top: 0.7%;
+        font-size: 16px;
+        padding: 0 2%;
+    }
+    
+    .main ul {
+        margin-top: 0.9%;
+        font-size: 11px;
+    }
+    
+    .main ul a {
+        padding: 8px;
+    }
+    
+    .main ul a:first-child {
+        font-weight: bolder;
+    }
+    /*Estilo del header*/
+    
+    .showcase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 65vh;
+        background-image: url(imgs/header.jpg);
+        background-size: 100% 100%;
+        position: relative;
+        min-width: 250px;
+    }
+    
+    .showcase::before {
+        content: '';
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.6);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .showcase h1,
+    h2 {
+        color: white;
+        position: relative;
+    }
+    
+    .showcase h1 {
+        display: flex;
+        justify-content: center;
+        margin: 0 1%;
+        font-size: 460%;
+        font-weight: lighter;
+        min-height: 100px;
+    }
+    
+    .showcase h2 {
+        font-size: 250%;
+        font-weight: lighter;
+        margin: 0 1%;
+        min-height: 100px;
+    }
+    /*Estilos de los articulos */
+    
+    .section {
+        display: grid;
+    }
+    
+    .section .article1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 40vh;
+        width: 100%;
+        border: solid 2px black;
+        min-height: 260px;
+    }
+    
+    .section .article1 p {
+        font-size: 1rem;
+    }
