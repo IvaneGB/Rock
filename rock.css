@@ -1,399 +1,607 @@
-   * {
-       padding: 0;
-       margin: 0;
-       box-sizing: border-box;
-   }
-   
-   body {
-       width: 100%;
-       font-family: 'Raleway', sans-serif;
-   }
-   
-   .container {
-       width: 100%;
-       height: 100vh;
-   }
-   
-   header {
-       width: 100%;
-       background: #32314e;
-   }
-   
-   .img {
-       width: 30px;
-       height: 30px;
-   }
-   
-   #btn-menu {
-       display: none;
-       width: 30px;
-       height: 30px;
-   }
-   
-   header label {
-       display: none;
-       width: 30px;
-       height: 30px;
-       padding: 10px;
-   }
-   
-   header {
-       display: flex;
-       justify-content: space-between;
-   }
-   
-   .title {
-       width: 30%;
-       display: flex;
-       align-items: center;
-       padding: 10px;
-       color: white;
-   }
-   
-   .menu {
-       width: 30%;
-   }
-   
-   .menu ul {
-       margin: 0;
-       list-style: none;
-       padding: 0;
-       display: flex;
-       justify-content: flex-end;
-   }
-   
-   .menu li a {
-       display: block;
-       padding: 15px 20px;
-       color: white;
-       text-decoration: none;
-   }
-   /*Estilo del Showcase*/
-   
-   .showcase {
-       height: 100vh;
-       background-image: url(imgs/header.jpg);
-       background-size: 100% 100%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       flex-direction: column;
-   }
-   
-   .showcase h1 {
-       color: white;
-       font-size: 7rem;
-       font-family: 'Raleway', sans-serif;
-       font-weight: lighter;
-   }
-   
-   .showcase h2 {
-       color: white;
-       font-size: 4rem;
-       font-weight: lighter;
-       font-family: 'Raleway', sans-serif;
-   }
-   /* estilos del section */
-   
-   .section {
-       display: grid;
-   }
-   /* Caja con Parrafo 1 */
-   
-   .article1 {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       width: 100%;
-       height: 100vh;
-       padding: 30px;
-   }
-   
-   .caja1 {
-       display: flex;
-       flex-direction: column;
-       text-align: center;
-       width: 35%;
-       padding: 1%;
-   }
-   
-   .caja1 h3 {
-       font-family: 'Raleway', sans-serif;
-       text-align: left;
-       font-size: 3.5rem;
-       margin: 10px 0px;
-       font-weight: lighter;
-   }
-   
-   .caja1 p {
-       font-family: 'Raleway', sans-serif;
-       text-align: left;
-       font-size: 1.3rem;
-       font-weight: lighter;
-   }
-   
-   .caja-img {
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       height: 100%;
-       width: 50%;
-   }
-   
-   .caja-img .img1 {
-       width: 84%;
-       border-radius: 50%;
-   }
-   /* Caja con Parrafo 2 */
-   
-   .article2 {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       width: 100%;
-       height: 100vh;
-       padding: 30px;
-   }
-   
-   .caja2 {
-       display: flex;
-       flex-direction: column;
-       text-align: center;
-       width: 35%;
-       padding: 1%;
-   }
-   
-   .caja2 h4 {
-       font-family: 'Raleway', sans-serif;
-       text-align: left;
-       font-size: 3.5rem;
-       margin: 10px 0px;
-       font-weight: lighter;
-   }
-   
-   .caja2 p {
-       font-family: 'Raleway', sans-serif;
-       text-align: left;
-       font-size: 1.3rem;
-       font-weight: lighter;
-   }
-   
-   .caja-img2 {
-       display: flex;
-       justify-content: flex-start;
-       align-items: center;
-       height: 100%;
-       width: 50%;
-   }
-   
-   .caja-img2 .img2 {
-       width: 84%;
-       border-radius: 50%;
-   }
-   /* Caja de parrafo 3*/
-   
-   .article3 {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       width: 100%;
-       height: 100vh;
-       padding: 30px;
-   }
-   
-   .caja3 {
-       display: flex;
-       flex-direction: column;
-       text-align: center;
-       width: 35%;
-       padding: 1%;
-   }
-   
-   .caja3 h5 {
-       font-family: 'Raleway', sans-serif;
-       text-align: left;
-       font-size: 3.5rem;
-       margin: 10px 0px;
-       font-weight: lighter;
-   }
-   
-   .caja3 p {
-       font-family: 'Raleway', sans-serif;
-       text-align: left;
-       font-size: 1.3rem;
-       font-weight: lighter;
-   }
-   
-   .caja-img3 {
-       display: flex;
-       justify-content: flex-end;
-       align-items: center;
-       height: 100%;
-       width: 50%;
-   }
-   
-   .caja-img3 .img3 {
-       width: 84%;
-       border-radius: 50%;
-   }
-   /* Estilo del Footer */
-   
-   footer {
-       height: 9vh;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-   }
-   
-   footer {
-       background: #32314e;
-       color: white;
-       font-size: 1rem;
-   }
-   /* Estilos Mobile */
-   
-   @media (max-width:768px) {
+       * {
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+       }
+       
        body {
+           width: 100%;
            font-size: 16px;
            font-family: 'Raleway', sans-serif;
        }
+       
+       .container {
+           width: 100%;
+           height: 100vh;
+       }
+       
+       header {
+           width: 100%;
+           background: #32314e;
+       }
+       
+       .img {
+           width: 30px;
+           height: 30px;
+       }
+       
+       #btn-menu {
+           display: none;
+           width: 30px;
+           height: 30px;
+       }
+       
+       header label {
+           display: none;
+           width: 30px;
+           height: 30px;
+           padding: 10px;
+       }
+       
        header {
            display: flex;
-           justify-content: flex-end;
-           height: 48px;
+           justify-content: space-between;
        }
-       header .title {
-           width: 60%;
-           padding: 3%;
-       }
-       header label {
-           width: 40%;
+       
+       .title {
+           width: 30%;
            display: flex;
-           justify-content: flex-end;
-           z-index: 10;
+           align-items: center;
+           padding: 10px;
+           color: white;
        }
+       
        .menu {
-           position: absolute;
-           background: #32314e;
-           width: 40%;
-           margin-right: -40%;
-           transition: all 0.4s;
+           width: 30%;
        }
+       
        .menu ul {
-           margin-top: 50px;
-           display: flex;
-           flex-direction: column;
-       }
-       #btn-menu:checked~.menu {
            margin: 0;
+           list-style: none;
+           padding: 0;
+           display: flex;
+           justify-content: flex-end;
+       }
+       
+       .menu li a {
+           display: block;
+           padding: 15px 20px;
+           color: white;
+           text-decoration: none;
        }
        /*Estilo del Showcase*/
+       
        .showcase {
+           height: 100vh;
            background-image: url(imgs/header.jpg);
            background-size: 100% 100%;
-           /* height: 550px; */
-           height: 100vh;
-           padding: 80px 28px;
-           display: flex;
-           flex-direction: column;
-       }
-       .showcase h1 {
-           padding: 2%;
-           font-size: 4rem;
-           text-align: center;
-           color: white;
-           font-weight: 200;
-       }
-       .showcase h2 {
-           padding: 2%;
-           font-size: 2rem;
-           text-align: center;
-           color: white;
-           font-weight: lighter;
-       }
-       /* estilos del section */
-       .section {
-           display: flex;
-           flex-direction: column;
-           font-family: 'Raleway', sans-serif;
-       }
-       /* articulo 1 */
-       .article1 {
-           height: 100vh;
-           padding: 30px 28px;
-           text-align: center;
-       }
-       .article1 h3 {
-           text-align: center;
-           font-weight: lighter;
-           font-size: 2.6rem;
-           padding: 5px 20px;
-           margin: 5px;
-       }
-       .article1 p {
-           text-align: center;
-           font-size: 0.9rem;
-           padding: 14px 35px;
-       }
-       .article1 .img1 {
-           margin: 30px 20px;
-           border-radius: 50%;
-           width: 60%;
-       }
-       /* articulo 2 */
-       .article2 {
-           height: 100vh;
-           padding: 5px 28px;
-           text-align: center;
-       }
-       .article2 .img2 {
-           border-radius: 50%;
-           width: 60%;
-       }
-       .article2 h4 {
-           text-align: center;
-           font-weight: lighter;
-           font-size: 2.9rem;
-           padding: 3px 20px;
-           margin: 20px;
-       }
-       .article2 p {
-           text-align: center;
-           font-size: 1rem;
-           padding: 13px 35px;
-           margin: 20px;
-       }
-       /* articulo 3 */
-       .article3 {
-           height: 90vh;
-           padding: 5px 28px;
-           text-align: center;
-       }
-       .article3 h5 {
-           text-align: center;
-           font-weight: lighter;
-           font-size: 2.8rem;
-           padding: 5px 20px;
-           margin: 5px;
-       }
-       .article3 p {
-           text-align: center;
-           font-size: 1rem;
-           padding: 14px 35px;
-       }
-       .article3 .img3 {
-           margin: 30px 20px;
-           border-radius: 50%;
-           width: 60%;
-       }
-       footer h6 {
-           height: 10vh;
-           background: #32314e;
-           color: white;
            display: flex;
            align-items: center;
            justify-content: center;
-           font-size: 0.7rem;
+           flex-direction: column;
+       }
+       
+       .showcase h1 {
+           color: white;
+           font-size: 7rem;
+           font-family: 'Raleway', sans-serif;
+           font-weight: lighter;
+       }
+       
+       .showcase h2 {
+           color: white;
+           font-size: 4rem;
+           font-weight: lighter;
            font-family: 'Raleway', sans-serif;
        }
-   }
+       /* estilos del section */
+       
+       .section {
+           display: grid;
+       }
+       /* Caja con Parrafo 1 */
+       
+       .article1 {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           height: 100vh;
+           padding: 30px;
+       }
+       
+       .caja1 {
+           display: flex;
+           flex-direction: column;
+           text-align: center;
+           width: 35%;
+           padding: 1%;
+       }
+       
+       .caja1 h3 {
+           font-family: 'Raleway', sans-serif;
+           text-align: left;
+           font-size: 3.5rem;
+           margin: 10px 0px;
+           font-weight: lighter;
+       }
+       
+       .caja1 p {
+           font-family: 'Raleway', sans-serif;
+           text-align: left;
+           font-size: 1.3rem;
+           font-weight: lighter;
+       }
+       
+       .caja-img {
+           display: flex;
+           justify-content: flex-end;
+           align-items: center;
+           height: 100%;
+           width: 50%;
+       }
+       
+       .caja-img .img1 {
+           width: 84%;
+           border-radius: 50%;
+       }
+       /* Caja con Parrafo 2 */
+       
+       .article2 {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           height: 100vh;
+           padding: 30px;
+       }
+       
+       .caja2 {
+           display: flex;
+           flex-direction: column;
+           text-align: center;
+           width: 35%;
+           padding: 1%;
+       }
+       
+       .caja2 h4 {
+           font-family: 'Raleway', sans-serif;
+           text-align: left;
+           font-size: 3.5rem;
+           margin: 10px 0px;
+           font-weight: lighter;
+       }
+       
+       .caja2 p {
+           font-family: 'Raleway', sans-serif;
+           text-align: left;
+           font-size: 1.3rem;
+           font-weight: lighter;
+       }
+       
+       .caja-img2 {
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
+           height: 100%;
+           width: 50%;
+       }
+       
+       .caja-img2 .img2 {
+           width: 84%;
+           border-radius: 50%;
+       }
+       /* Caja de parrafo 3*/
+       
+       .article3 {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           height: 100vh;
+           padding: 30px;
+       }
+       
+       .caja3 {
+           display: flex;
+           flex-direction: column;
+           text-align: center;
+           width: 35%;
+           padding: 1%;
+       }
+       
+       .caja3 h5 {
+           font-family: 'Raleway', sans-serif;
+           text-align: left;
+           font-size: 3.5rem;
+           margin: 10px 0px;
+           font-weight: lighter;
+       }
+       
+       .caja3 p {
+           font-family: 'Raleway', sans-serif;
+           text-align: left;
+           font-size: 1.3rem;
+           font-weight: lighter;
+       }
+       
+       .caja-img3 {
+           display: flex;
+           justify-content: flex-end;
+           align-items: center;
+           height: 100%;
+           width: 50%;
+       }
+       
+       .caja-img3 .img3 {
+           width: 84%;
+           border-radius: 50%;
+       }
+       /* Estilo del Footer */
+       
+       footer {
+           height: 9vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       
+       footer {
+           background: #32314e;
+           color: white;
+           font-size: 1rem;
+       }
+       /* Estilos Mobile */
+       
+       @media (max-width:594px) {
+           body {
+               font-size: 16px;
+               font-family: 'Raleway', sans-serif;
+           }
+           header {
+               display: flex;
+               justify-content: flex-end;
+               height: 48px;
+           }
+           header .title {
+               width: 60%;
+               padding: 3%;
+           }
+           header label {
+               width: 40%;
+               display: flex;
+               justify-content: flex-end;
+               z-index: 10;
+           }
+           .menu {
+               position: absolute;
+               background: #32314e;
+               width: 40%;
+               margin-right: -40%;
+               transition: all 0.4s;
+           }
+           .menu ul {
+               margin-top: 50px;
+               display: flex;
+               flex-direction: column;
+           }
+           #btn-menu:checked~.menu {
+               margin: 0;
+           }
+           /*Estilo del Showcase*/
+           .showcase {
+               background-image: url(imgs/header.jpg);
+               background-size: 100% 100%;
+               height: 100vh;
+               padding: 80px 28px;
+               display: flex;
+               flex-direction: column;
+           }
+           .showcase h1 {
+               padding: 2%;
+               font-size: 4rem;
+               text-align: center;
+               color: white;
+               font-weight: 200;
+           }
+           .showcase h2 {
+               padding: 2%;
+               font-size: 2rem;
+               text-align: center;
+               color: white;
+               font-weight: lighter;
+           }
+           /* estilos del section */
+           .section {
+               display: flex;
+               flex-direction: column;
+               font-family: 'Raleway', sans-serif;
+           }
+           /* articulo 1 */
+           .article1 {
+               height: 100vh;
+               padding: 10px 30px;
+               flex-direction: column;
+           }
+           .caja1 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 50%;
+           }
+           .caja1 h3 {
+               font-size: 2.8rem;
+           }
+           .caja1 p {
+               margin-top: 2%;
+               font-size: 0.9rem;
+               width: 60vw;
+           }
+           .caja-img {
+               width: 80vw;
+               height: 50%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img .img1 {
+               width: 78%;
+               border-radius: 50%;
+           }
+           /* articulo 2 */
+           .article2 {
+               height: 100vh;
+               padding: 10px 30px;
+               flex-direction: column;
+           }
+           .caja2 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 50%;
+           }
+           .caja2 h4 {
+               font-size: 2.8rem;
+           }
+           .caja2 p {
+               margin-top: 2%;
+               font-size: 0.9rem;
+               width: 60vw;
+           }
+           .caja-img2 {
+               width: 80vw;
+               height: 50%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img2 .img2 {
+               width: 78%;
+               border-radius: 50%;
+           }
+           /* articulo 3 */
+           .article3 {
+               height: 100vh;
+               padding: 10px 30px;
+               flex-direction: column;
+           }
+           .caja3 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 40%;
+           }
+           .caja3 h5 {
+               font-size: 2.8rem;
+           }
+           .caja3 p {
+               margin-top: 2%;
+               font-size: 0.9rem;
+               width: 60vw;
+           }
+           .caja-img3 {
+               width: 80vw;
+               height: 60%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img3 .img3 {
+               width: 78%;
+               border-radius: 50%;
+           }
+           footer {
+               height: 9vh;
+           }
+       }
+       /* estilo mobile mas corto */
+       
+       @media (max-width:360px) {
+           /* article 1 */
+           .caja1 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 50%;
+           }
+           .caja1 h3 {
+               font-size: 2.5rem;
+           }
+           .caja1 p {
+               margin-top: 2%;
+               font-size: 0.6rem;
+               width: 60vw;
+               padding: 5px;
+           }
+           .caja-img {
+               width: 80vw;
+               height: 50%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img .img1 {
+               width: 78%;
+               border-radius: 50%;
+           }
+           /* article 2 */
+           .caja2 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 50%;
+           }
+           .caja2 h4 {
+               font-size: 2.5rem;
+           }
+           .caja2 p {
+               margin-top: 2%;
+               font-size: 0.6rem;
+               width: 60vw;
+               padding: 5px;
+           }
+           .caja-img2 {
+               width: 80vw;
+               height: 50%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img2 .img2 {
+               width: 78%;
+               border-radius: 50%;
+           }
+           /* article 3 */
+           .caja3 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 40%;
+           }
+           .caja3 h5 {
+               font-size: 2.5rem;
+           }
+           .caja3 p {
+               margin-top: 2%;
+               font-size: 0.6rem;
+               width: 60vw;
+               padding: 5px;
+           }
+           .caja-img3 {
+               width: 80vw;
+               height: 60%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img3 .img3 {
+               width: 78%;
+               border-radius: 50%;
+           }
+       }
+       /* estilo mobile mas estrecho */
+       
+       @media (max-width:320px) {
+           /* estilos del section */
+           .section {
+               display: flex;
+               flex-direction: column;
+               font-family: 'Raleway', sans-serif;
+           }
+           /* articulo 1 */
+           .article1 {
+               height: 100vh;
+               padding: 10px 30px;
+               flex-direction: column;
+           }
+           .caja1 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 50%;
+           }
+           .caja1 h3 {
+               font-size: 2.5rem;
+           }
+           .caja1 p {
+               margin-top: 2%;
+               font-size: 0.6rem;
+               width: 60vw;
+           }
+           .caja-img {
+               width: 80vw;
+               height: 50%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img .img1 {
+               width: 78%;
+               border-radius: 50%;
+           }
+           /* articulo 2 */
+           .article2 {
+               height: 100vh;
+               padding: 10px 30px;
+               flex-direction: column;
+           }
+           .caja2 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 50%;
+           }
+           .caja2 h4 {
+               font-size: 2.5rem;
+           }
+           .caja2 p {
+               margin-top: 2%;
+               font-size: 0.6rem;
+               width: 60vw;
+           }
+           .caja-img2 {
+               width: 80vw;
+               height: 50%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img2 .img2 {
+               width: 78%;
+               border-radius: 50%;
+           }
+           /* articulo 3 */
+           .article3 {
+               height: 100vh;
+               padding: 10px 30px;
+               flex-direction: column;
+           }
+           .caja3 {
+               padding: 0% 15%;
+               display: flex;
+               flex-direction: column;
+               width: 80vw;
+               height: 40%;
+           }
+           .caja3 h5 {
+               font-size: 2.5rem;
+           }
+           .caja3 p {
+               margin-top: 2%;
+               font-size: 0.6rem;
+               width: 60vw;
+           }
+           .caja-img3 {
+               width: 80vw;
+               height: 60%;
+               display: flex;
+               justify-content: center;
+           }
+           .caja-img3 .img3 {
+               width: 78%;
+               border-radius: 50%;
+           }
+           footer {
+               height: 5vh;
+           }
+       }
