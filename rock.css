@@ -277,7 +277,8 @@
                position: absolute;
                background: #32314e;
                width: 40%;
-               margin-right: -40%;
+               /* margin-right: -40%; */
+               margin-right: 100%;
                transition: all 0.4s;
            }
            .menu ul {
