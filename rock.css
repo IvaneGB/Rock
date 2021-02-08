@@ -186,12 +186,12 @@
             .article2 p {
                 text-align: center;
                 font-size: 1rem;
-                padding: 14px 35px;
+                padding: 13px 35px;
                 margin: 20px;
             }
             /* articulo 3 */
             .article3 {
-                height: 100vh;
+                height: 90vh;
                 padding: 5px 28px;
                 text-align: center;
             }
@@ -211,5 +211,15 @@
                 margin: 30px 20px;
                 border-radius: 50%;
                 width: 60%;
+            }
+            footer h6 {
+                height: 10vh;
+                background: #32314e;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.7rem;
+                font-family: 'Raleway', sans-serif;
             }
         }
